@@ -11,6 +11,6 @@ Create a executable file for windows machine using `pyi-makespec move_mouse.py`
 
 A spec file will be created. Edit the file add `('config.ini', '.')` under a.datas(). 
 
-Under a.exe() edit console=False. Save the filr
+Under a.exe() edit console=False. Save the file
 
 Then `pyinstaller move_mouse.spec`
