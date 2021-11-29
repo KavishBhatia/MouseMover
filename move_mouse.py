@@ -17,7 +17,10 @@ def scan():
             x = random.randint(0, width)
             y = random.randint(0, height)
             pyg.moveTo(x, y, duration=2)
-            print("sleep for: %d min" %(timer))
+            if timer < 1:
+                print("sleep for: 0 min {:.1f} sec".format(timer*60))
+            else:
+                print("sleep for: {:.2f} min".format(timer))
             time.sleep(timer * 60)
             pyg.press('win')
         
